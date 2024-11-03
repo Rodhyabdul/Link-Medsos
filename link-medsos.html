@@ -1,137 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link Media Sosial Saya</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
-            flex-direction: column; /* Mengubah flex-direction */
-            gap: 20px; /* Menambahkan gap */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Media Sosial shiahindonesia.com</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      flex-direction: column;
+      gap: 20px;
+      /* Menambahkan background gradient */
+      background: linear-gradient(to right, #2193b0, #6dd5ed); 
+    }
 
-        .container {
-            text-align: center;
-        }
+    .container {
+      text-align: center;
+    }
 
-        .link-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
+    .link-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
 
-        .link {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 25px;
-            border-radius: 5px;
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            transition: all 0.3s ease; /* Mengubah properti transition */
-            position: relative; /* Menambahkan position */
-            overflow: hidden; /* Menambahkan overflow */
-        }
+    .link {
+      display: inline-flex;
+      align-items: center;
+      margin: 10px;
+      padding: 15px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
 
-        .facebook {
-            background-color: #3b5998;
-        }
+    .instagram {
+      background-color: #e4405f;
+    }
 
-        .instagram {
-            background-color: #e4405f;
-        }
+    .telegram {
+      background-color: #2968c3;
+    }
 
-        .twitter {
-            background-color: #55acee;
-        }
+    .website {
+      background-color: #000000;
+    }
 
-        .youtube {
-            background-color: #cd201f;
-        }
+    .facebook {
+      background-color: #3b5998;
+    }
 
-        .link:hover {
-            transform: translateY(-5px); /* Menambahkan transform */
-            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Menambahkan box-shadow */
-        }
+    .link:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    }
 
-        .link::before { /* Menambahkan pseudo-element ::before */
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.2);
-            transform: skewX(45deg);
-            transition: all 0.5s ease;
-        }
+    .link::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.2);
+      transform: skewX(45deg);
+      transition: all 0.5s ease;
+    }
 
-        .link:hover::before {
-            left: 100%;
-        }
+    .link:hover::before {
+      left: 100%;
+    }
 
-        .link i {
-            margin-right: 10px;
-        }
-    </style>
+    .link img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    /* Responsif untuk layar kecil */
+    @media (max-width: 768px) {
+      .link-container {
+        flex-direction: column; /* Mengubah flex-direction menjadi column */
+        align-items: center; /* Menyelaraskan item ke tengah */
+      }
+
+      .link {
+        width: 80%; /* Mengatur lebar tombol */
+        margin: 10px 0; /* Mengatur margin atas dan bawah */
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Media Sosial Saya</h1>
-        <div class="link-container">
-            <a href="https://www.facebook.com/profil-facebook-anda" target="_blank" class="link facebook">
-                <i class="fab fa-facebook-f"></i> Facebook
-            </a>
-            <a href="https://www.instagram.com/profil-instagram-anda" target="_blank" class="link instagram">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="https://www.twitter.com/profil-twitter-anda" target="_blank" class="link twitter">
-                <i class="fab fa-twitter"></i> Twitter
-            </a>
-            <a href="https://www.youtube.com/channel-youtube-anda" target="_blank" class="link youtube">
-                <i class="fab fa-youtube"></i> YouTube
-            </a>
-        </div>
+  <div class="container">
+    <h1>shiahindonesia.com</h1> 
+    <div class="link-container">
+      <a href="https://www.instagram.com/shiahindonesia" target="_blank" class="link instagram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Logo Instagram"> Instagram
+      </a>
+      <a href="https://t.me/Shiahindonesia" target="_blank" class="link telegram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/2048px-Telegram_2019_Logo.svg.png" alt="Logo Telegram"> Telegram
+      </a>
+      <a href="https://shiahindonesia.com" target="_blank" class="link website">
+        <img src="pngwing.com.png" alt="Logo Website"> Website
+      </a>
+      <a href="https://www.facebook.com/shiahindonesia" target="_blank" class="link facebook">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt="Logo Facebook"> Facebook
+      </a>
     </div>
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
-    <script>
-        // JavaScript untuk efek interaktif
-        const links = document.querySelectorAll('.link');
+  </div>
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+  <script>
+    // JavaScript untuk efek interaktif (sama seperti sebelumnya)
+    const links = document.querySelectorAll('.link');
 
-        links.forEach(link => {
-            link.addEventListener('mouseover', () => {
-                link.style.backgroundColor = getRandomColor();
-            });
-            link.addEventListener('mouseout', () => {
-                // Mengembalikan warna asli setelah mouse keluar
-                const classList = link.classList;
-                if (classList.contains('facebook')) {
-                    link.style.backgroundColor = '#3b5998';
-                } else if (classList.contains('instagram')) {
-                    link.style.backgroundColor = '#e4405f';
-                } else if (classList.contains('twitter')) {
-                    link.style.backgroundColor = '#55acee';
-                } else if (classList.contains('youtube')) {
-                    link.style.backgroundColor = '#cd201f';
-                }
-            });
-        });
-
-        function getRandomColor() {
-            const letters = '0123456789ABCDEF';
-            let color = '#';
-            for (let i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
+    links.forEach(link => {
+      link.addEventListener('mouseover', () => {
+        link.style.backgroundColor = getRandomColor();
+      });
+      link.addEventListener('mouseout', () => {
+        // Mengembalikan warna asli setelah mouse keluar
+        const classList = link.classList;
+        if (classList.contains('instagram')) {
+          link.style.backgroundColor = '#e4405f';
+        } else if (classList.contains('telegram')) {
+          link.style.backgroundColor = '#2968c3';
+        } else if (classList.contains('website')) {
+          link.style.backgroundColor = '#000000';
+        } else if (classList.contains('facebook')) {
+          link.style.backgroundColor = '#3b5998';
         }
-    </script>
+      });
+    });
+
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+  </script>
 </body>
 </html>
